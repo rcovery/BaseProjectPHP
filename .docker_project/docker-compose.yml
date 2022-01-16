@@ -6,7 +6,6 @@ services:
       - TERM=xterm
     ports:
       - "8080:80"
-      - "2222:22"
     container_name: "project"
     volumes:
       - ..:/home/project
@@ -17,4 +16,4 @@ services:
       POSTGRES_USER: username
       POSTGRES_DB: projectdb
     ports:
-      - "3000:3306"
+      - "5432:5432"
