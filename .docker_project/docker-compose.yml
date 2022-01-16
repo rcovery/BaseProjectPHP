@@ -11,8 +11,10 @@ services:
     volumes:
       - ..:/home/project
   db:
-    image: mysql
+    image: postgres:alpine
     environment:
-      MYSQL_ROOT_PASSWORD: example
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: username
+      POSTGRES_DB: projectdb
     ports:
       - "3000:3306"
