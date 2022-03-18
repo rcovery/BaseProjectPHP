@@ -7,14 +7,14 @@ services:
       DEV: true
     ports:
       - "8080:80"
-    container_name: "quizapp"
+    container_name: "app"
     volumes:
       - ..:/home/app
 
   db:
     image: mysql
     environment:
-      MYSQL_ROOT_PASSWORD: quiz
+      MYSQL_ROOT_PASSWORD: rootpasswd
     ports:
       - "3000:3306"
-    container_name: "quizdb"
+    container_name: "db"
