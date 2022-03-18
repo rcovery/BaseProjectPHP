@@ -1,0 +1,31 @@
+2022-03-18 02:05:48 error: [Cake\Http\Exception\MissingControllerException] Controller class Vendor could not be found. in /home/app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php on line 349
+Exception Attributes: array (
+  'class' => 'Vendor',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Stack Trace:
+- /home/app/vendor/cakephp/cakephp/src/Controller/ControllerFactory.php:74
+- /home/app/vendor/cakephp/cakephp/src/Http/BaseApplication.php:315
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:77
+- /home/app/vendor/cakephp/cakephp/src/Http/Middleware/CsrfProtectionMiddleware.php:174
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/cakephp/src/Http/Middleware/BodyParserMiddleware.php:157
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/cakephp/src/Routing/Middleware/RoutingMiddleware.php:161
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/cakephp/src/Routing/Middleware/AssetMiddleware.php:68
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/cakephp/src/Error/Middleware/ErrorHandlerMiddleware.php:126
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/debug_kit/src/Middleware/DebugKitMiddleware.php:60
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:73
+- /home/app/vendor/cakephp/cakephp/src/Http/Runner.php:58
+- /home/app/vendor/cakephp/cakephp/src/Http/Server.php:90
+- /home/app/webroot/index.php:40
+
+Request URL: /vendor
+Client IP: 172.29.0.1
+
+

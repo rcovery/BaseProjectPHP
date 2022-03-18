@@ -1,19 +1,20 @@
-version: "3.5"
+version:	"3.5"
 services:
   app:
     build: .
     environment:
-      - TERM=xterm
+      TERM: "xterm"
+      DEV: true
     ports:
       - "8080:80"
-    container_name: "project"
+    container_name: "quizapp"
     volumes:
-      - ..:/home/project
+      - ..:/home/app
+
   db:
-    image: postgres:alpine
+    image: mysql
     environment:
-      POSTGRES_PASSWORD: password
-      POSTGRES_USER: username
-      POSTGRES_DB: projectdb
+      MYSQL_ROOT_PASSWORD: quiz
     ports:
-      - "5432:5432"
+      - "3000:3306"
+    container_name: "quizdb"
